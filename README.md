@@ -17,6 +17,4 @@ I created this simple repo (that is really just the standard Apache Jena Fuseki 
 
 I cover various semantic web and linked data topics in many of my books, but suually use public SPARQL endpoints for examples. I plan on extending these examples using local Apache Jena Fuseki SPARQL endpoints.
 
-My personeal web site: https://markwatson.com
-
-
+My personal web site: https://markwatson.com
