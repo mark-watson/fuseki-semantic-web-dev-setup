@@ -4,7 +4,7 @@
 
 For my own research I usually use the DBPedia and WikiData SPARQL endpoints but I also need to serve my own RDF assets during development.
 
-I created this simple repo (that is really just the standadr Apache Jena Fuseki binary distribution with my notes and data files added) for quick setup and testing on my laptops or leased servers.
+I created this simple repo (that is really just the standard Apache Jena Fuseki binary distribution with my notes and data files added) for quick setup and testing on my laptops or leased servers.
 
 ## Resources
 
