@@ -1,4 +1,4 @@
-# Example setup for Apache Fuseki RDF server with test data
+# Example setup for Apache Fuseki RDF SPARQL server with test data
 
     ./fuseki-server --file RDF/sample_news.nt /news
 
