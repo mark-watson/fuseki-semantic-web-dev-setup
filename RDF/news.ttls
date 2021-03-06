@@ -1,0 +1,17 @@
+@prefix kbs: <http://kbsportal.com/kb/> .
+@prefix kbt: <http://knowledgebooks.com/ontology/> .
+@prefix kbi: <http://knowledgebooks.com/instance/> .
+
+<< kbs:oak_creek_flooding kbt:storyType kbi:disaster >> kbt:popularity 0.5 .
+
+kbs:oak_creek_flooding kbt:summary "Oak Creek flooded last week affecting 5 businesses" .
+
+kbs:bear_mountain_fire kbt:storyType kbi:disaster .
+
+kbs:bear_mountain_fire kbt:summary "The fire on Bear Mountain was caused by lightening" .
+
+kbs:trout_season kbt:storyType kbi:sports .
+
+kbs:trout_season kbt:storyType kbi:recreation .
+
+kbs:jc_basketball kbt:storyType kbi:sports .
