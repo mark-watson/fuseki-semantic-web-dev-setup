@@ -97,14 +97,24 @@ then
 fi
 
 CP=$JAR
-if [ -d $FUSEKI_BASE/extra ]
+if [ -d "$FUSEKI_BASE/extra" ]
 then
    CP="${CP}:${FUSEKI_BASE}/extra/*" 
 fi
 
 JVM_ARGS=${JVM_ARGS:--Xmx4G}
 
-exec $JAVA $JVM_ARGS -cp "$CP" org.apache.jena.fuseki.cmd.FusekiCmd "$@"
+## Logging
+# Setting log4j2 with some other file.
+DFT_LOG_CONF="$FUSEKI_HOME/log4j2.properties"
+if [ -z "$LOGGING" -a -e "$DFT_LOG_CONF" ]
+then
+    # Set if no LOGGING and the default file does exist.
+    # Otherwise, the server will default to a built-in.
+    LOGGING="-Dlog4j.configurationFile=$DFT_LOG_CONF"
+fi
+
+exec $JAVA $JVM_ARGS $LOGGING -cp "$CP" org.apache.jena.fuseki.cmd.FusekiCmd "$@"
 
 ## Adding custom code to the Fuseki server:
 ##
