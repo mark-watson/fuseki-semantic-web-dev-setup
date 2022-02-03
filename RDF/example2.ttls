@@ -1,0 +1,18 @@
+@prefix : <http://ex.com/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+:man :hasSpouse :woman .
+
+<<:man :hasSpouse :woman>> :city_of_marriage "San Diego";
+  :location_of_honeymoon "Hawaii";
+  :startDate "2020-02-11"^^<http://www.w3.org/2001/XMLSchema#date> .
+
+<<:man :job "KG engineer">> :startDate "2018-09-23"^^<http://www.w3.org/2001/XMLSchema#date>;
+  :city_of_work "Seattle";
+  :prefered_programming_language "Common Lisp";
+  :prefered_rdf_store "Allegro Graph";
+  :hobbies <<:man :hobby_name "model trains">> .
+
+<<:man :hobby_name "model trains">> :startDate "1959-04-20"^^<http://www.w3.org/2001/XMLSchema#date>;
+  :rdfs:label "hobbies";
+  :endDate "2002-11-07"^^<http://www.w3.org/2001/XMLSchema#date> .

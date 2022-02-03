@@ -1,0 +1,1 @@
+SELECT ?age ?src WHERE {?bob foaf:name "Bob\ . <<?bob foaf:age ?age>> dc:source ?src .}

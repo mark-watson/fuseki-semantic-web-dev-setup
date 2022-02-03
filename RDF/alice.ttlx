@@ -1,0 +1,6 @@
+PREFIX : <http://mw.com/>
+
+<<:Alice :worksFor :ACME>> :role :CEO ;  
+                           :since 2010 ;
+                           :probability 0.8 ;
+                           :source <http://example.com/news> . 
